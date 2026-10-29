@@ -1,174 +1,335 @@
-# Nexus Financial Services: Intro to GRC Assessment
+# Nexus Financial Services | GRC Assessment & ISO 27001 Gap Analysis
 
-![GRC](https://img.shields.io/badge/Focus-Governance%2C%20Risk%20%26%20Compliance-1f6feb)
-![Status](https://img.shields.io/badge/Project-Case%20Study-blue)
-![Domain](https://img.shields.io/badge/Industry-Financial%20Services-2ea44f)
+![Project type](https://img.shields.io/badge/Project-Case%20Study-blue)
+![Focus](https://img.shields.io/badge/Focus-GRC-005A9C)
+![Standard](https://img.shields.io/badge/Reference-ISO%2FIEC%2027001%3A2022-008080)
+![Deliverables](https://img.shields.io/badge/Deliverables-Documentation-grey)
 
-A Governance, Risk, and Compliance (GRC) case-study analysis for **Nexus Financial Services**, a growing organization operating without a formal structure for policy governance, risk assessment, or regulatory compliance tracking.
+A documentation-based portfolio project assessing governance, risk, compliance, and information security management gaps at Nexus Financial Services.
 
-This project demonstrates foundational GRC analysis skills by identifying organizational control gaps, classifying them across the three GRC pillars, and recommending a practical framework to improve accountability, oversight, and operational resilience.
+The project brings together an introductory GRC assessment and an ISO/IEC 27001:2022 gap analysis. It translates organizational weaknesses into categorized findings, proposed controls, an Information Security Management System (ISMS) scope, and a prioritized remediation roadmap.
+
+> This repository presents an educational case-study assessment—not a deployed application, completed control implementation, formal certification audit, or claim of ISO 27001 certification.
+
+## Contents
+
+- [Project Purpose](#project-purpose)
+- [Problem Statement](#problem-statement)
+- [Case-Study Environment](#case-study-environment)
+- [Key Deliverables](#key-deliverables)
+- [Assessment Approach](#assessment-approach)
+- [Key Findings](#key-findings)
+- [Proposed ISMS Scope](#proposed-isms-scope)
+- [PDCA Assessment](#pdca-assessment)
+- [Remediation Roadmap](#remediation-roadmap)
+- [Tools, Formats, and Technologies](#tools-formats-and-technologies)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Limitations](#limitations)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [Author](#author)
+- [References](#references)
+- [License](#license)
 
 ## Project Purpose
 
-As Nexus Financial Services expands, informal decision-making and unclear ownership create avoidable operational, regulatory, financial, and reputational exposure.
+Demonstrate how a GRC analyst can connect business challenges with governance structures, security requirements, control recommendations, and practical remediation priorities.
 
-This assessment analyzes the company’s current-state GRC weaknesses and recommends an integrated, board-sponsored GRC framework. The recommendation focuses on establishing clear accountability, repeatable processes, registers for key information, and regular leadership reporting.
+The project addresses two complementary questions:
+
+1. How can an organization establish a basic governance, risk, and compliance framework?
+2. What information security management gaps should it address as it prepares for ISO/IEC 27001 certification?
 
 ## Problem Statement
 
-Nexus Financial Services lacks a formal approach to:
+Nexus Financial Services has grown faster than its governance and security management practices.
 
-- Approving, maintaining, and enforcing company policies
-- Assessing risk before business decisions, initiatives, or operational changes
-- Tracking regulatory requirements, obligations, and deadlines
-- Assigning clear ownership for governance, risk, and compliance responsibilities
-- Providing leadership with consistent GRC oversight and reporting
+Its case-study challenges include:
 
-Without these controls, the organization may face inconsistent decision-making, unmanaged risk exposure, missed obligations, regulatory scrutiny, financial penalties, and damage to stakeholder trust.
+- No clear process for approving or enforcing policies
+- No consistent approach to assessing risk before business decisions
+- No assigned responsibility for tracking regulatory requirements and deadlines
+- No formal ISMS governance or established information security objectives
+- Independent control implementation across departments
+- Incomplete identification and classification of critical assets
+- Limited organization-wide risk visibility
 
-## Key Features
+These weaknesses create potential exposure to unauthorized access, data breaches, inconsistent protection, regulatory failures, operational disruption, and certification delays.
 
-- Clear explanation of the three GRC pillars:
-  - Governance
-  - Risk Management
-  - Compliance
-- Identification and classification of key organizational issues
-- Business-focused rationale connecting each issue to a GRC category
-- Practical recommendation for a formal GRC operating framework
-- Suggested foundational GRC artifacts:
-  - GRC charter
-  - Policy register
-  - Risk register
-  - Regulatory obligations calendar
-  - Quarterly GRC status reporting
-- Emphasis on accountability, auditability, and sustainable organizational growth
+## Case-Study Environment
 
-## GRC Concepts Applied
+The ISO 27001 assessment describes the following organizational and technical scope:
 
-| Area | Definition | Application at Nexus |
+| Area | Scenario Details |
+|---|---|
+| Organization | Nexus Financial Services |
+| Workforce and locations | 250 employees across three offices |
+| Business functions | IT & Operations; Finance & Compliance; Human Resources |
+| Cloud environment | AWS-hosted customer data |
+| Business systems | Payment-processing systems and a mobile banking application |
+| Integrations | Third-party APIs |
+| Identity infrastructure | On-premises Active Directory |
+| Information assets | Customer, transaction, employee, contractor, operational, security, and regulatory-reporting information |
+
+These technologies form the environment being assessed. They are not software components built or deployed by this project.
+
+## Key Deliverables
+
+| Document | Purpose | Included Analysis |
 |---|---|---|
-| Governance | The structure through which an organization is directed, controlled, and held accountable. | Establishes decision rights, policy ownership, approval processes, and leadership oversight. |
-| Risk Management | The ongoing process of identifying, assessing, treating, and monitoring risks that could affect organizational objectives. | Introduces a standard risk-assessment process and risk register for business decisions and initiatives. |
-| Compliance | The process of meeting applicable laws, regulations, contractual duties, and internal policies. | Assigns ownership for obligations and tracks regulatory changes, requirements, deadlines, and evidence. |
+| `Intro-to-GRC-Assignment.docx` | Assess foundational GRC weaknesses | GRC definitions, three categorized issues, business implications, and a recommendation for a board-sponsored GRC framework |
+| `NEXUS-GAP-ANALYSIS-TASK.docx` | Assess ISO 27001 readiness gaps | Five security gaps, control mappings, recommendations, ISMS scope, PDCA assessment, and phased remediation priorities |
 
-## Issues Identified
+The project’s central strength is its progression from business-level accountability issues to a structured information security improvement plan.
 
-| Observed Issue | GRC Category | Potential Impact |
+## Assessment Approach
+
+The documents use a qualitative, scenario-based approach:
+
+1. Review the case-study business context and stated challenges.
+2. Classify foundational issues under governance, risk management, or compliance.
+3. Identify five major information security gaps.
+4. Associate findings with relevant ISO/IEC 27001:2022 requirements and Annex A control areas.
+5. Recommend controls and explain their business rationale.
+6. Define the proposed ISMS boundary.
+7. Assess the current Plan–Do–Check–Act lifecycle.
+8. Prioritize remediation based on foundational dependencies and protection needs.
+
+No live-system testing, configuration review, automated scanning, or control-effectiveness validation is documented.
+
+## Key Findings
+
+### Foundational GRC Issues
+
+| Issue | GRC Pillar | Proposed Response |
 |---|---|---|
-| No clear process to approve or enforce company policies | Governance | Inconsistent policy interpretation, weak accountability, and limited management oversight |
-| No standard process for assessing risk before decisions | Risk Management | Financial, operational, cybersecurity, and reputational risks may be accepted without appropriate analysis |
-| No assigned owner for tracking regulatory requirements and deadlines | Compliance | Missed regulatory obligations, late filings, penalties, and regulatory scrutiny |
+| Policies lack clear approval and enforcement processes | Governance | Define policy ownership, approval authority, decision rights, and oversight |
+| Business decisions lack a standard risk-assessment method | Risk Management | Establish a repeatable assessment process, risk ownership, and a central risk register |
+| Regulatory requirements and deadlines lack an accountable owner | Compliance | Assign responsibility and maintain a regulatory obligations calendar |
 
-## Recommendation
+The introductory assessment recommends a board-sponsored GRC framework supported by a charter, accountable owners, core registers, and at least quarterly leadership reporting.
 
-Nexus Financial Services should establish a **formal, board-sponsored GRC framework** with clearly defined responsibilities and reporting processes.
+### ISO 27001 Gap Analysis
 
-The first implementation phase should include:
+| Identified Gap | Priority in Assessment | Proposed Response |
+|---|---|---|
+| No formal ISMS governance, policy, accountability, or executive oversight | Critical | Establish an ISMS owner, approved security policy, defined responsibilities, and recurring oversight |
+| No consistent information security risk-assessment and treatment process | Critical | Define risk criteria, ownership, treatment options, acceptance thresholds, and review intervals |
+| Incomplete asset identification, ownership, and classification | High | Maintain a central asset register with owners and information classifications |
+| Inconsistent identity, access, and privileged-access practices | High | Standardize role-based access, MFA, joiner–mover–leaver workflows, and access reviews |
+| Insufficient cloud, supplier, and API risk governance | High | Introduce supplier due diligence, security requirements, contractual safeguards, and periodic reviews |
 
-1. Creating and approving a GRC charter.
-2. Defining GRC roles, responsibilities, decision rights, and reporting lines.
-3. Assigning accountable owners for governance, risk, and compliance activities.
-4. Creating a centralized policy register.
-5. Implementing a risk register and a repeatable risk-assessment process.
-6. Developing a regulatory obligations calendar.
-7. Delivering concise GRC status reports to leadership at least quarterly.
+The detailed report associates findings with control areas covering policy, security responsibilities, asset inventory, information classification, identity and access management, supplier relationships, and cloud services.
 
-This approach connects governance, risk, and compliance into one practical operating model rather than treating them as separate activities.
+The risk-management finding also references clauses 6.1.2 and 6.1.3. Control mappings should be validated against the applicable standard before operational or audit use.
 
-## Project Structure
+## Proposed ISMS Scope
+
+The proposed ISMS covers the people, processes, information, applications, infrastructure, and third-party interfaces supporting IT & Operations, Finance & Compliance, and Human Resources across Nexus’s three offices.
+
+It includes AWS-hosted customer information, payment-processing systems, the mobile banking application, third-party API integrations, on-premises Active Directory, and the related customer, transaction, employee, contractor, operational, security, and regulatory-reporting information.
+
+## PDCA Assessment
+
+The analysis uses Plan–Do–Check–Act (PDCA) to describe the maturity of the scenario’s security management practices.
+
+| Stage | Assessed State | Basis in the Case Study |
+|---|---|---|
+| Plan | Immature | Governance, policy, objectives, risk processes, and asset ownership are not fully established |
+| Do | Fragmented | Departments implement controls independently |
+| Check | Not evidenced | The scenario does not demonstrate consistent monitoring, internal audit, control testing, or management review |
+| Act | Not evidenced | The scenario does not describe a formal corrective-action or continual-improvement process |
+
+“Not evidenced” means the supplied scenario does not demonstrate the activity; it does not establish that the activity is definitively absent.
+
+## Remediation Roadmap
+
+The following phases are recommendations, not completed implementations.
+
+### Phase 1 — Establish the ISMS Foundation
+
+- Secure executive sponsorship.
+- Assign ISMS, risk, asset, and control ownership.
+- Approve the ISMS scope, security policy, governance charter, and reporting structure.
+- Establish risk-assessment and risk-treatment methods.
+- Create a central risk register.
+- Develop a Statement of Applicability (SoA) documenting selected controls, implementation status, and inclusion or exclusion rationale.
+
+Intended outcome: governed, risk-based, documented security decisions with clear accountability.
+
+### Phase 2 — Protect Critical Information and Systems
+
+- Complete the asset inventory and information-classification scheme.
+- Assign owners to critical information assets.
+- Standardize identity, access, and privileged-access practices.
+- Formalize cloud, supplier, and API security requirements.
+- Establish incident-management procedures, escalation paths, and evidence requirements.
+
+Intended outcome: clearer visibility of critical assets and more consistent protection across systems and suppliers.
+
+### Phase 3 — Demonstrate and Improve Effectiveness
+
+- Define measurable security objectives and performance indicators.
+- Establish monitoring, vulnerability management, and backup testing.
+- Deliver employee and contractor security awareness training.
+- Conduct internal audits and management reviews.
+- Track corrective actions and reassess readiness.
+
+Intended outcome: evidence that selected controls operate effectively and support continual improvement.
+
+## Tools, Formats, and Technologies
+
+### Project Artifacts
+
+| Item | Role |
+|---|---|
+| DOCX | Format of the two assessment reports |
+| Markdown | Repository overview and navigation |
+| GRC analysis | Classification of organizational issues and accountability gaps |
+| ISO/IEC 27001:2022 | Reference framework for the security gap analysis |
+| PDCA | Structure for assessing management-system maturity |
+
+The document-authoring application is not confirmed in the supplied materials.
+
+### Technologies Discussed in the Scenario
+
+- Amazon Web Services (AWS)
+- On-premises Active Directory
+- Payment-processing systems
+- Mobile banking application
+- Third-party API integrations
+
+No programming language, package manager, application runtime, CI/CD pipeline, or deployed GRC platform is documented.
+
+## Repository Structure
+
+Expected layout when the supplied reports and this README are added to the repository:
 
 ```text
 .
+├── README.md
 ├── Intro-to-GRC-Assignment.docx
-└── README.md
+└── NEXUS-GAP-ANALYSIS-TASK.docx
 ```
 
-> Add folders or files here if supporting materials become available, such as risk-register templates, policy-register examples, presentation slides, process diagrams, or screenshots.
+## Getting Started
 
-## Technologies and Tools
+### Prerequisites
 
-This is a documentation-based GRC analysis project.
+- A DOCX-compatible document viewer or editor
+- Git, only if cloning the repository locally
 
-- Microsoft Word / DOCX documentation
-- Markdown for project documentation
-- GRC concepts and frameworks
-- Risk assessment and control-analysis methods
+### Option 1 — Review Through GitHub
 
-> Placeholder: Add any additional tools used to create diagrams, visuals, templates, presentations, or supporting analysis.
+1. Locate the report you want to review.
+2. Download the DOCX file.
+3. Open it in a compatible document viewer.
 
-## Installation
+### Option 2 — Clone Locally
 
-No software installation is required to review the project documentation.
-
-To view the project locally:
+Replace the placeholders with the repository’s actual details:
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone [https://github.com/](https://github.com/)<github-username>/<repository-name>.git
+cd <repository-name>
 ```
 
-Then open:
+Open either assessment document to review the full analysis.
 
-```text
-Intro-to-GRC-Assignment.docx
-```
+There are no project dependencies to install, build commands to run, or application services to start.
 
 ## Usage
 
-1. Review the case-study scenario and business problem.
-2. Examine the definitions of Governance, Risk Management, and Compliance.
-3. Review the identified issues and their GRC classifications.
-4. Use the recommendation as a starting point for designing a basic GRC program.
-5. Adapt the suggested registers and reporting approach to a real or simulated organization.
+### For Recruiters and Hiring Managers
 
-This project can be useful as a portfolio example for entry-level GRC, risk, compliance, privacy, audit, business analysis, or health-information governance roles.
+1. Review the key findings for a concise summary of the analyst’s reasoning.
+2. Open the introductory GRC report to assess issue classification and business communication.
+3. Open the gap-analysis report to review scope definition, control recommendations, prioritization, and readiness planning.
 
-## Suggested Future Enhancements
+### For Learners and Reviewers
 
-- Add a sample GRC charter.
-- Create a policy register template.
-- Create a risk register with risk ratings, owners, treatments, and review dates.
-- Create a regulatory obligations calendar.
-- Add a RACI matrix for GRC responsibilities.
-- Develop a quarterly GRC dashboard or status-report template.
-- Add process maps for policy approval, risk assessment, and compliance monitoring.
-- Include screenshots or visuals of supporting templates and diagrams.
+1. Compare each finding with the scenario evidence.
+2. Review the distinction between management-system requirements and security controls.
+3. Examine why governance and risk methodology precede later remediation activities.
+4. Use the recommendations as a starting point for creating supporting templates.
 
-## Contribution Guidelines
+Do not treat the reports as evidence that controls have been implemented, tested, or certified.
 
-Contributions are welcome where they improve the clarity, practicality, or completeness of the project.
+## Skills Demonstrated
 
-1. Fork the repository.
-2. Create a feature branch.
+- Governance, risk, and compliance issue classification
+- Business-impact analysis
+- ISO 27001 gap-analysis documentation
+- Control mapping and recommendation development
+- ISMS scope definition
+- Qualitative remediation prioritization
+- PDCA maturity assessment
+- Executive-summary writing and stakeholder communication
 
-```bash
-git checkout -b feature/your-improvement
-```
+## Limitations
 
-3. Make your changes.
-4. Commit with a clear message.
+- Findings are based on the supplied case-study narrative, not an independently verified organizational assessment.
+- No live infrastructure access, interviews, audit evidence, or technical testing is documented.
+- Priority ratings are qualitative; no numerical scoring model is supplied.
+- Recommended registers, policies, dashboards, and the SoA are not included as completed artifacts.
+- No jurisdiction-specific regulatory assessment is documented.
+- The introductory report includes “Nexus Health Services” in some headings, while its body and the gap-analysis report describe Nexus Financial Services. This README uses Nexus Financial Services consistently.
+- ISO control mappings and certification-readiness conclusions require further validation before professional audit use.
 
-```bash
-git commit -m "Add risk register template"
-```
+## Future Enhancements
 
-5. Push your branch.
+Potential additions—not currently included—are:
 
-```bash
-git push origin feature/your-improvement
-```
+- GRC charter and responsibility matrix
+- Risk register and documented scoring criteria
+- Asset inventory and classification template
+- Policy register and regulatory obligations calendar
+- Statement of Applicability
+- Remediation tracker with owners, target dates, and evidence requirements
+- Quarterly GRC dashboard
+- PDF versions of the reports for easier review
+- Screenshots or diagrams of completed supporting artifacts
 
-6. Open a pull request describing the purpose of the proposed change.
+## Contributing
 
-Please ensure contributions are accurate, professional, and aligned with recognized GRC principles.
+To propose an improvement:
+
+1. Open an issue describing the correction or proposed addition.
+2. Explain the supporting evidence or rationale.
+3. Submit a pull request with focused changes.
+
+Please:
+
+- Keep scenario facts separate from assumptions and recommendations.
+- Validate any changes to ISO references or control mappings.
+- Do not describe proposed controls as implemented.
+- Avoid adding confidential, personal, or proprietary organizational information.
+- Respect applicable copyright and licensing restrictions.
 
 ## Author
 
-**Maureen Uzoewulu**  
-GRC Analyst | Privacy, Health Informatics, Business Analysis, and Risk Management
+Maureen Uzoewulu  
+GRC Analyst — Case-Study Portfolio
 
-> Placeholder: Add LinkedIn URL, portfolio URL, email address, or GitHub profile link.
+- GitHub: <GitHub profile URL>
+- LinkedIn: <LinkedIn profile URL>
+- Contact: <optional professional email>
+
+## References
+
+The supplied reports cite:
+
+- Bello-Abubakar, A. (n.d.). Enterprise GRC framework integration. Course presentation, 10Alytics.
+- ISO/IEC 27001:2022, Information security, cybersecurity and privacy protection — Information security management systems — Requirements.
+- ISO 27001 implementation and gap-analysis course materials.
+
+Consult the reports for their reference details.
 
 ## License
 
-> Placeholder: Add a license, such as the MIT License, if this repository will be shared publicly.
+<Add the selected license and a LICENSE file, or specify the intended reuse permissions.>
+
+Any repository license should distinguish original project content from third-party course materials and standards.
